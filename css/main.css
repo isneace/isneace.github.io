@@ -1,6 +1,8 @@
 table, th, td {
   border: 1px solid #13FF21;
   border-collapse: collapse;
+  text-alignment: center;
+  width: 50%;
 }
 
 body {
@@ -22,9 +24,3 @@ tr {
   color: #13FF21;
   font-family: Impact;
 }
-
-table {
-  text-alignment: center;
-  width: 50%;
-}
-
