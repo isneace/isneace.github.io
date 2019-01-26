@@ -11,8 +11,17 @@
         <h3> PURPOSE: </h3>
         <p> To learn how to use HTML, CSS, and JavaScript effectively.<br> - Isaac S. Neace </p>
       </div>
+      <button onclick="dateTime()"> JS-Date/Time </button>
       
-      <!--
+      <script>
+        function dateTime() {
+          document.getElementById("test").innerHTML = Date();
+        }  
+      </script>
+      <div class="hacker">
+        <p id="test"></p>
+      </div>
+      
       <table>
         <tr>
           <th> HTML </th>
@@ -30,17 +39,5 @@
           <td> Logic </td>
         </tr>
       </table>
-      -->
-      
-      <button onclick="dateTime()"> JS-Date/Time </button>
-      
-      <script>
-        function dateTime() {
-          document.getElementById("test").innerHTML = Date();
-        }  
-      </script>
-      <div class="hacker">
-        <p id="test"></p>
-      </div>
     </body>
   </html>
