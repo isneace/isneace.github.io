@@ -29,3 +29,7 @@ button {
   border: black;
 }
 
+button:hover {
+  background-color: lightgreen;
+}
+
