@@ -9,15 +9,18 @@ body {
 
 h1 {
   color: #13FF21;
+  font: impact;
 }
 
 p {
   color: #13FF21;
   text-alignment: center;
+  font: impact;
 }
 
 tr {
   color: #13FF21;
+  font: impact;
 }
 
 table {
