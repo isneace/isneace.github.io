@@ -2,19 +2,19 @@
   <html>
     <head>
       <title> FirstGitPage </title>
-      <link rel="stylesheet" type="text/css" href="/css/main.css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css"> <!-- This links to my CSS style sheet -->
     </head>
 
     <body>
-      <div class="hacker">
-        <h1> Isaac.com </h1>
+      <div class="hacker"> <!-- This creates a class called "hacker" so that when I edit in CSS it affects that whole class -->
+        <h1> Isaac.com </h1> <!-- Headers are ranked by importance from 6, being least, to 1, being most. -->
         <h3> PURPOSE: </h3>
-        <p> To learn how to use HTML, CSS, and JavaScript effectively.<br> - Isaac S. Neace - </p>
+        <p> To learn how to use HTML, CSS, and JavaScript effectively.<br> - Isaac S. Neace - </p> <!-- p stands for paragraph and br is a break -->
       </div>
-      <button onclick="dateTime()"> JS-Date/Time </button>
+      <button onclick="dateTime()"> JS-Date/Time </button> <!-- onclick is an event for buttons and here I am calling a JS function -->
       
-      <script>
-        function dateTime() {
+      <script> 
+        function dateTime() { 
           document.getElementById("test").innerHTML = Date();
         }  
       </script>
