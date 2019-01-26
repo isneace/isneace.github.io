@@ -11,7 +11,7 @@ table, th, td {
 
 body {
   background-color: black;
-  backgound-image: url("https://www.wallpaperwolf.com/images/matrix-decoded-0269-640.jpg");
+  border: 2px solid #13FF21; 
 }
 
 .hacker {
