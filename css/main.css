@@ -12,10 +12,10 @@ table, th, td {
 body {
   background-color: black;
   border: 2px solid #13FF21;
-  width: 30%;
+  width: 40%;
   height: 485px;
-  margin-left: 35%;
-  margin-right: 35%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .hacker {
