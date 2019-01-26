@@ -9,19 +9,8 @@ body {
   background-color: black;
 }
 
-h1 {
+.hacker {
   color: #13FF21;
-  font-family: 'Impact';
-}
-
-h3 {
-  color: #13FF21;
-  font-family: 'Impact';
-}
-
-p {
-  color: #13FF21;
-  text-alignment: center;
   font-family: 'Impact';
 }
 
