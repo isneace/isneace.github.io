@@ -1,7 +1,7 @@
 table, th, td {
   border: 2px solid #13FF21;
   border-collapse: collapse;
-  text-alignment: center;
+  text-align: center;
   width: 25%;
   position: relative;
   top: 20px;
@@ -16,6 +16,7 @@ body {
   font-family: 'Impact';
   position: relative;
   top: 20px;
+  text-align: center;
 }
 
 tr {
@@ -31,6 +32,7 @@ button {
   position: relative;
   top: 20px;
   border: black;
+  text-align: center;
 }
 
 button:hover {
