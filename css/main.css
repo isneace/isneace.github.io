@@ -1,0 +1,21 @@
+table, th, td {
+  border: 1px solid #13FF21;
+  border-collapse: collapse;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+color: #13FF21;
+}
+
+p {
+  color: #13FF21;
+  text-alignment: center;
+}
+
+tr {
+  color: #13FF21;
+}
