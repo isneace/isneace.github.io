@@ -36,7 +36,7 @@ button {
   height: 15%;
   font-family: 'Impact';
   position: relative;
-  top: 40px;
-  border: none;
+  top: 20px;
+  border: black;
 }
 
