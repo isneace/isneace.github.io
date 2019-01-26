@@ -37,5 +37,6 @@ button {
   font-family: 'Impact';
   position: relative;
   top: 40px;
+  border: none;
 }
 
