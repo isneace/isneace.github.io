@@ -3,6 +3,8 @@ table, th, td {
   border-collapse: collapse;
   text-alignment: center;
   width: 25%;
+  position: relative;
+  top: 20px;
 }
 
 body {
