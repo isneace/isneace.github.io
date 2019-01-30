@@ -9,6 +9,20 @@
       <h1> Occupation Overview </h1>
       <h2> Computer Programmers in Seattle-Tacoma-Bellevue, WA </h2>
       
+      <script>
+        function loadJSON(callback) {
+          var xobj = new XMLHttpRequest();
+            xobj.overrideMimeType("application/json");
+          xobj.open('GET', 'my_data.json', true);
+          xobj.onreadystatechange = function() {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+              callback(xobj.responseText);
+            } 
+          };
+          xobj.send(null)
+        }
+      </script>
+      
       <div class = "Titles">
         <h3> Occupation Summary for Computer Programmers </h3>
       </div>
@@ -25,7 +39,7 @@
         <h3> Regional Trends </h3>
       </div>
       
-      <script></script> <!-- Figure out how to put a graph here -->
+      <!-- Figure out how to put a graph here -->
       
       <table class = "RegionStateNation">
         <tr>
