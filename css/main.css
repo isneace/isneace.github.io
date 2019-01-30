@@ -26,4 +26,6 @@ table.IndEmpCP tr {
   border-collapse: collapse; 
 }
 
-
+canvas {
+  width: %100;
+}
