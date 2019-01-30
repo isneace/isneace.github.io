@@ -25,11 +25,15 @@
         }
         
         function init() {
-          loadJSON(function(response) {
-            var actualJSON = JSON.parse(response);
+          var json;
+          loadJSON("ProjectSampleReponse.json", function(response) {
+            json = JSON.parse(response);
+            callJSON(json);
           });
         }
-        document.getElementById("test").innerHTML = actualJSON.occupation;
+        function callJSON(json){
+          document.getElementById("test").innerHTML = actualJSON.occupation;
+        }
         //var testVar = "hello world";
         //document.getElementById("test").innerHTML = testVar;
       </script>
