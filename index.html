@@ -22,10 +22,13 @@
           xobj.send(null)
         }
         
+        <p id = "test"></p>
+        
         function init() {
           loadJSON(function(response) {
-            var actual_JSON = JSON.parse(response);
+            var actualJSON = JSON.parse(response);
           });
+          document.getElementById("test").innerHTML = actualJSON = actualJSON.occupation;
         }
       </script>
       
