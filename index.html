@@ -32,9 +32,9 @@
           });
         }
         function callJSON(json){
-          document.getElementById("test").innerHTML = actualJSON.occupation;
+          return json.occupation;
         }
-        callJSON(json);
+        document.getElementById("test").innerHTML = callJSON();
         //var testVar = "hello world";
         //document.getElementById("test").innerHTML = testVar;
       </script>
