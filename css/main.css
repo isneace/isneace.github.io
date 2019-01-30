@@ -1,11 +1,12 @@
 table.OccupSumCP, th, td {
   width: 100%;
   border: 2px solid black;
-  border-collapse: collapse; 
+  border-collapse: collapse;
 }
 
 table.RegionStateNation, th, td {
   width: 100%;
+  text-align: left;
 }
 
 table.RegionStateNation tr {
@@ -16,6 +17,7 @@ table.RegionStateNation tr {
 
 table.IndEmpCP, th, td {
   width: 100%;
+  text-align: left;
 }
 
 table.IndEmpCP tr {
