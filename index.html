@@ -21,6 +21,12 @@
           };
           xobj.send(null)
         }
+        
+        function init() {
+          loadJSON(function(response) {
+            var actual_JSON = JSON.parse(response);
+          });
+        }
       </script>
       
       <div class = "Titles">
