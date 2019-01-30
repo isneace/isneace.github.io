@@ -9,6 +9,8 @@
       <h1> Occupation Overview </h1>
       <h2> Computer Programmers in Seattle-Tacoma-Bellevue, WA </h2>
       
+      text-align: left;
+      
       <script>
         function loadJSON(callback) {
           var xobj = new XMLHttpRequest();
@@ -21,8 +23,6 @@
           };
           xobj.send(null)
         }
-        
-        <p id = "test"></p>
         
         function init() {
           loadJSON(function(response) {
