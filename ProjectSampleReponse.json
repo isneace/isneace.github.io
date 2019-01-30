@@ -1,4 +1,4 @@
-{
+var data = [{
      "occupation": {
           "onet": "15-1131",
           "title": "Computer Programmers"
@@ -88,4 +88,4 @@
                }
           ]
      }
-}
+}]
