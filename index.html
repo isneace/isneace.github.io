@@ -11,32 +11,12 @@
       
       <p id = "test"></p>
       
+      <script scr = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      
       <script>
-        function loadJSON(callback) {
-          var xobj = new XMLHttpRequest();
-            xobj.overrideMimeType("application/json");
-          xobj.open('GET', 'ProjectSampleReponse.json', true);
-          xobj.onreadystatechange = function() {
-            if (xobj.readyState == 4 && xobj.status == "200") {
-              callback(xobj.responseText);
-            } 
-          };
-          xobj.send(null)
-        }
-        
-        function init() {
-          var json;
-          loadJSON("ProjectSampleReponse.json", function(response) {
-            json = JSON.parse(response);
-            callJSON(json);
-          });
-        }
-        function callJSON(json){
-          return json.occupation;
-        }
-        document.getElementById("test").innerHTML = callJSON();
-        //var testVar = "hello world";
-        //document.getElementById("test").innerHTML = testVar;
+        $.getJSON('ProjectSampleResponse.json', function(data){
+                  console.log("It worked!");
+                  });
       </script>
       
       <div class = "Titles">
