@@ -4,7 +4,7 @@
       <title> EMSIdataProject </title>
       <link rel="stylesheet" type="text/css" href="/css/main.css"> <!-- This links to my CSS style sheet -->
       
-      <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- This gives me access to the ajax/jquery libraries -->
       
       <script>
         /*
@@ -14,22 +14,22 @@
           });
         });
         */
-        var json = null;
         
-        $.ajax({
+        $.ajax({ //Uses Ajax to "import" the json file
           url: 'ProjectSampleReponse.json',
           dataType: 'json',
           type: 'get',
           cache: false,
           success: function(data){
+            var json;
             $(function(data){
-              var json = data;
+              json = data;
               
               
             });
           }
         });
-        console.log(json);
+        document.getElementById("test").innerHTML = json.occupation.onet;
       </script>
     </head>
     
