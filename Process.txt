@@ -1,0 +1,12 @@
+
+
+Step 1:
+  //Get basic layout (html)
+  //Link JSON file (JavaScript)
+
+Step 2:
+  //Assign variables & data (JavaScript)
+  //Make the graph (html)
+  
+Step 3:
+  //Make it look pretty (css)
