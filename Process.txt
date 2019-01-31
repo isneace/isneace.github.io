@@ -10,3 +10,4 @@ Step 2:
   
 Step 3:
   //Make it look pretty (css)
+  //Finish out comments (html/JavaScript/css)
