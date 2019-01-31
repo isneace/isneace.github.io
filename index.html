@@ -15,19 +15,21 @@
         });
         */
         
-
-        $.ajax({ //Uses Ajax to "import" the json file
-          url: 'ProjectSampleReponse.json',
-          dataType: 'json',
-          type: 'get',
-          cache: false,
-          success: function(data){
-            $(function(data){
-              console.log(data);
-              console.log(data.occupation);
-            });
-          }
-        });
+        function getJSON() {
+          var occupation;
+          $.ajax({ //Uses Ajax to "import" the json file
+            url: 'ProjectSampleReponse.json',
+            dataType: 'json',
+            type: 'get',
+            cache: false,
+            success: function(data){
+              $(function(data){
+                occupation = data.occupation;
+              });
+            }
+          });
+          document.getElementById("test").innerHTML = occupation.onet;
+        }
         //document.getElementById("test").innerHTML = data.occupation.onet;
       </script>
     </head>
