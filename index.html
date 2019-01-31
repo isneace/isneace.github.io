@@ -12,24 +12,24 @@
           var result = response;
           console.log("Inside ajax " + result);
         }
-        document.getElementById("test").innerHTML = result;
         
-          $.ajax({ //Uses Ajax to "import" the json file
-            url: 'ProjectSampleReponse.json',
-            dataType: 'json',
-            type: 'get',
-            cache: false,
-            success: myCallback,
-           
-            /*
-            success: function(data){
-              var occupation;
-              $(function(data){
-                occupation = data.occupation;
-              });
-            }
-            */
-          });
+        $.ajax({ //Uses Ajax to "import" the json file
+          url: 'ProjectSampleReponse.json',
+          dataType: 'json',
+          type: 'get',
+          cache: false,
+          success: myCallback,
+
+          /*
+          success: function(data){
+            var occupation;
+            $(function(data){
+              occupation = data.occupation;
+            });
+          }
+          */
+        });
+        document.getElementById("test").innerHTML = 50;
         
         //document.getElementById("test").innerHTML = occupation;
       </script>
