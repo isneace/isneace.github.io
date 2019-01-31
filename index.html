@@ -7,7 +7,9 @@
       <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- This gives me access to the ajax/jquery libraries -->
       
       <script>
-        
+        var x = 50;
+        document.getElementById("test").innerHTML = x;
+        /*
         function myCallback(response) {
           var result = response;
           console.log("Inside ajax " + result);
@@ -20,7 +22,6 @@
           cache: false,
           success: myCallback,
 
-          /*
           success: function(data){
             var occupation;
             $(function(data){
@@ -28,10 +29,8 @@
             });
           }
           */
-        });
-        document.getElementById("test").innerHTML = 50;
         
-        //document.getElementById("test").innerHTML = occupation;
+        });
       </script>
     </head>
     
