@@ -14,11 +14,12 @@
           });
         });
         */
-       
+       var result;
         function myCallback(response) {
-          var result = response;
+          result = response;
           console.log("Inside ajax " + result);
         }
+        document.getElementById("test").innerHTML = result;
         
           $.ajax({ //Uses Ajax to "import" the json file
             url: 'ProjectSampleReponse.json',
@@ -37,7 +38,7 @@
             */
           });
         
-        document.getElementById("test").innerHTML = occupation;
+        //document.getElementById("test").innerHTML = occupation;
       </script>
     </head>
     
