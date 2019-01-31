@@ -7,28 +7,21 @@
       <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- This gives me access to the ajax/jquery libraries -->
       
       <script>
-        /*
-        function myCallback(response) {
-          var result = response;
-          console.log("Inside ajax " + result);
+        
+        $(document.ready(function(){
+          $.ajax({ //Uses Ajax to "import" the json file
+            url: 'ProjectSampleReponse.json',
+            dataType: 'json',
+            type: 'get',
+            cache: false,
+            success: myCallback,        
+          });
+
+          function myCallback(response) {
+            console.log(response);
+          }
         }
         
-        $.ajax({ //Uses Ajax to "import" the json file
-          url: 'ProjectSampleReponse.json',
-          dataType: 'json',
-          type: 'get',
-          cache: false,
-          success: myCallback,
-
-          success: function(data){
-            var occupation;
-            $(function(data){
-              occupation = data.occupation;
-            });
-          }
-        
-        });
-        */
       </script>
     </head>
     
