@@ -18,6 +18,7 @@
           });
           
           var summ;
+          var trendComp;
           var empInd; //employing_industries
           
           var empIndOccTot; //employing_industries in_occupation_job total
@@ -36,8 +37,8 @@
           
           function myCallback(response) {  //have to use call back because async
             summ = response.summary;
+            trendComp = response.trend_comparison;
             empInd = response.employing_industries;
-            console.log(summ.jobs.regional);
             
             //Below finds the percentage of in_occupation for each job
             empIndOccTot = (empInd.industries[0].in_occupation_jobs + empInd.industries[1].in_occupation_jobs + empInd.industries[2].in_occupation_jobs + empInd.industries[3].in_occupation_jobs + empInd.industries[4].in_occupation_jobs);
@@ -58,6 +59,10 @@
             document.getElementById("jobs").innerHTML = summ.jobs.regional + "Job (2015)";
             document.getElementById("jobGrowth").innerHTML = "+" + summ.jobs_growth.regional + "%";
             document.getElementById("earnings").innerHTML = summ.earnings.regional;
+            
+            document.getElementById("13Job1").innerHTML = trendComp.regional[0];
+            document.getElementById("13Job2").innerHTML = trendComp.state[0];
+            document.getElementById("13Job3").innerHTML = trendComp.nation[0];
             
             document.getElementById("softPubTot").innerHTML = empInd.industries[0].in_occupation_jobs;
             document.getElementById("csdsTot").innerHTML = empInd.industries[1].in_occupation_jobs;
@@ -117,21 +122,21 @@
         </tr>
         <tr>
           <td> Region </td>
-          <td></td>
+          <td id = "13Job1"></td>
           <td></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
           <td> State </td>
-          <td></td>
+          <td id = "13Job2"></td>
           <td></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
           <td> Nation </td>
-          <td></td>
+          <td id = "13Job3"></td>
           <td></td>
           <td></td>
           <td></td>
