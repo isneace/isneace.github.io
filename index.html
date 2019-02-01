@@ -18,19 +18,20 @@
             success: myCallback,        
           });
 
-          var empInd;
-          var empIndJobTot;
-          var softPubJob;
-          var csdsJob;
-          var ccpsJob;
-          var airManJob;
-          var ocrsJob;
+          var empInd; //employing_industries
+          var empIndJobTot; //employing_industries job total
+          var softPubJob; //Software Publisher jobs
+          var csdsJob; //Custom System Design Services jobs
+          var ccpsJob; //Custom Computer Programming Services jobs
+          var airManJob; //Aircraft Manufacturing jobs
+          var ocrsJob; //Other Computer Related Services jobs
           
           var occup;
           function myCallback(response) {  //have to use call back because async
             
             empInd = response.employing_industries;
             
+            //Below finds the percentage of how many jobs there are in each field
             empIndJobTot = (empInd.industries[0].jobs + empInd.industries[1].jobs + empInd.industries[2].jobs + empInd.industries[3].jobs + empInd.industries[4].jobs);
             softPubJob = ((empInd.industries[0].jobs * 100) / empIndJobTot);
             csdsJob = ((empInd.industries[1].jobs * 100) / empIndJobTot);
