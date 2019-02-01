@@ -22,8 +22,8 @@
           var occupation;
           function myCallback(response) {
             
-            occupation = response.occupation.onet;
-            console.log(response.employing_industires.year);
+            occupation = response.occupation;
+            console.log(occupation.onet);
             //document.getElementById("test").innerHTML = occupation;
           }
           
