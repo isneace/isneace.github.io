@@ -19,16 +19,20 @@
           });
 
           var empInd;
-          var empIndJobTotal;
+          var empIndJobTot;
+          var softPubJob;
           var occup;
           function myCallback(response) {  //have to use call back because async
             
             empInd = response.employing_industries;
             
-            empIndJobTotal = empInd.industries[0].jobs + empInd.industries[1].jobs + empInd.industries[2].jobs + empInd.industries[3].jobs + empInd.industries[4].jobs
+            empIndJobTot = (empInd.industries[0].jobs + empInd.industries[1].jobs + empInd.industries[2].jobs + empInd.industries[3].jobs + empInd.industries[4].jobs);
+            softPubJob = ((empInd.industries[0].jobs * 100) / empIndJobTot);
+            
             occup = response.occupation;
             console.log(empIndJobTotal);
             //document.getElementById("test").innerHTML = occupation;
+            document.getElementById("softPub").innerHTML = softPubJob;
           }
           
         });
@@ -106,7 +110,7 @@
           <td> Software Publishers </td>
           <td></td> <!-- JS here -->
           <td></td> <!-- JS here -->
-          <td></td> <!-- JS here -->
+          <td id = "softPub"></td> <!-- JS here -->
         </tr>
         <tr>
           <td> Computer Systems Design Services </td>
