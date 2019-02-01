@@ -12,23 +12,23 @@
 .RegionStateNation, th, td {
   width: 100%;
   text-align: left;
-  border-bottom: 1px grey;
-  border-top: 1px grey;
-  padding: 10px;
 }
 
 .RegionStateNation tr {
+  border-bottom: 1px grey;
+  border-top: 1px grey;
+  padding: 10px;
 }
 
 .IndEmpCP, th, td {
   width: 100%;
   text-align: left;
-  border-bottom: 1px grey;
-  border-top: 1px grey;
-  padding: 10px;
 }
 
 .IndEmpCP tr {
+  border-bottom: 1px grey;
+  border-top: 1px grey;
+  padding: 10px;
 }
 
 canvas {
