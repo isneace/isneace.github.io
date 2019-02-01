@@ -25,6 +25,10 @@
           var T2change2; //Table 2, change from 2013 to 2018, row 2
           var T2change3; //Table 2, change from 2013 to 2018, row 3
           
+          var T2perChange1; //Table 2, percent change 2013 to 2018, row 1
+          var T2perChange2; //Table 2, percent change 2013 to 2018, row 2
+          var T2perChange3; //Table 2, percent change 2013 to 2018, row 3
+          
           var empIndOccTot; //employing_industries in_occupation_job total
           var softPubOcc; // Software Publisher in_occupation
           var csdsOcc; // Custom System Design in_occupation
@@ -47,6 +51,10 @@
             T2change1 = trendComp.regional[5] - trendComp.regional[0];
             T2change2 = trendComp.state[5] - trendComp.state[0];
             T2change3 = trendComp.nation[4] - trendComp.nation[0];
+            
+            T2perChange1 = ((trendComp.regional[5] / trendComp.regional[0]) * 100);
+            T2perChange2 = ((trendComp.state[5] / trendComp.state[0]) * 100);
+            T2perChange3 = ((trendComp.nation[4] / trendComp.nation[0]) * 100);
             
             //Below finds the percentage of in_occupation for each job
             empIndOccTot = (empInd.industries[0].in_occupation_jobs + empInd.industries[1].in_occupation_jobs + empInd.industries[2].in_occupation_jobs + empInd.industries[3].in_occupation_jobs + empInd.industries[4].in_occupation_jobs);
@@ -79,6 +87,10 @@
             document.getElementById("t2change1").innerHTML = T2change1;
             document.getElementById("t2change2").innerHTML = T2change2;
             document.getElementById("t2change3").innerHTML = T2change3;
+            
+            document.getElementById("t2perchange1").innerHTML = T2perChange1.toFix(0) + "%";
+            document.getElementById("t2perchange2").innerHTML = T2perChange2.toFix(0) + "%";
+            document.getElementById("t2perchange3").innerHTML = T2perChange3.toFix(0) + "%";
             
             document.getElementById("softPubTot").innerHTML = empInd.industries[0].in_occupation_jobs;
             document.getElementById("csdsTot").innerHTML = empInd.industries[1].in_occupation_jobs;
@@ -141,21 +153,21 @@
           <td id = "13Job1"></td>
           <td id = "18Job1"></td>
           <td id = "t2change1"></td>
-          <td></td>
+          <td id = "t2perchange1"></td>
         </tr>
         <tr>
           <td> State </td>
           <td id = "13Job2"></td>
           <td id = "18Job2"></td>
           <td id = "t2change2"></td>
-          <td></td>
+          <td id = "t2perchange2"></td>
         </tr>
         <tr>
           <td> Nation </td>
           <td id = "13Job3"></td>
           <td id = "18Job3"></td>
           <td id = "t2change3"></td>
-          <td></td>
+          <td id = "t2perchange3"></td>
         </tr>
       </table>
       
