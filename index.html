@@ -36,10 +36,8 @@
           var ocrsJob; //Other Computer Related Services jobs
           
           function myCallback(response) {  //have to use call back because async
-            
             summary = response.occupation;
             empInd = response.employing_industries;
-            
             
             //Below finds the percentage of in_occupation for each job
             empIndOccTot = (empInd.industries[0].in_occupation_jobs + empInd.industries[1].in_occupation_jobs + empInd.industries[2].in_occupation_jobs + empInd.industries[3].in_occupation_jobs + empInd.industries[4].in_occupation_jobs);
