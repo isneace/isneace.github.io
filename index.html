@@ -55,6 +55,12 @@
             airManJob = ((empInd.industries[3].jobs * 100) / empIndJobTot);
             ocrsJob = ((empInd.industries[4].jobs * 100) / empIndJobTot);
             
+            document.getElementById("softPubTot").innerHTML = empInd.industries[0].in_occupation_jobs;
+            document.getElementById("csdsTot").innerHTML = empInd.industries[1].in_occupation_jobs;
+            document.getElementById("ccpsTot").innerHTML = empInd.industries[2].in_occupation_jobs;
+            document.getElementById("airManTot").innerHTML = empInd.industries[3].in_occupation_jobs;
+            document.getElementById("ocrsTot").innerHTML = empInd.industries[4].in_occupation_jobs;
+            
             document.getElementById("softPubOcc").innerHTML = softPubOcc.toFixed(0) + "%";
             document.getElementById("csdsOcc").innerHTML = csdsOcc.toFixed(0) + "%";
             document.getElementById("ccpsOcc").innerHTML = ccpsOcc.toFixed(0) + "%";
@@ -141,31 +147,31 @@
         </tr>
         <tr>
           <td> Software Publishers </td>
-          <td></td> <!-- JS here -->
+          <td id = "softPubTot"></td> <!-- JS here -->
           <td id = "softPubOcc"></td> <!-- JS here -->
           <td id = "softPub"></td> <!-- JS here -->
         </tr>
         <tr>
           <td> Computer Systems Design Services </td>
-          <td></td> <!-- JS here -->
+          <td id = "csdsTot"></td> <!-- JS here -->
           <td id = "csdsOcc"></td> <!-- JS here -->
           <td id = "csds"></td> <!-- JS here -->
         </tr>
         <tr>
           <td> Custom Computer Programming Services </td>
-          <td></td> <!-- JS here -->
+          <td id = "ccpsTot"></td> <!-- JS here -->
           <td id = "ccpsOcc"></td> <!-- JS here -->
           <td id = "ccps"></td> <!-- JS here -->
         </tr>
         <tr>
           <td> Aircraft Manufacturing </td>
-          <td></td> <!-- JS here -->
+          <td id = "airManTot"></td> <!-- JS here -->
           <td id = "airManOcc"></td> <!-- JS here -->
           <td id = "airMan"></td> <!-- JS here -->
         </tr>
         <tr>
           <td> Other Computer Related Services </td>
-          <td></td> <!-- JS here -->
+          <td id = "ocrsTot"></td> <!-- JS here -->
           <td id = "ocrsOcc"></td> <!-- JS here -->
           <td id = "ocrs"></td> <!-- JS here -->
         </tr>
