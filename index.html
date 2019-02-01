@@ -23,9 +23,10 @@
           function myCallback(response) {
             console.log("inside the ajax." + response.occupation.onet);
             occupation = response.occupation.onet;
+            document.getElementById("test").innerHTML = occupation;
           }
           
-          document.getElementById("test").innerHTML = occupation;
+          //document.getElementById("test").innerHTML = occupation;
           alert(occupation);
           console.log("outside the ajax." + occupation);
         });
