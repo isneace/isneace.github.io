@@ -18,12 +18,13 @@
             success: myCallback,        
           });
 
-                                                //have to use call back because async
-          var occupation;
-          function myCallback(response) {
+          var empInd;
+          var occup;
+          function myCallback(response) {  //have to use call back because async
             
-            occupation = response.occupation;
-            console.log(occupation.onet);
+            empInd = response.employing_industries;
+            occup = response.occupation;
+            console.log(empInd.industries);
             //document.getElementById("test").innerHTML = occupation;
           }
           
