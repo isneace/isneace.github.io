@@ -1,31 +1,34 @@
 .OccupSumCP, th, td {
   width: 100%;
   border-collapse: collapse;
+  border-bottom: 2px solid grey;
+  border-top: 2px solid grey;
+  padding: 20px;
 }
 
 .OccupSumCP tr {
-  border-bottom: 2px solid grey;
-  padding: 50px;
 }
 
 .RegionStateNation, th, td {
   width: 100%;
   text-align: left;
+  border-bottom: 1px grey;
+  border-top: 1px grey;
+  padding: 10px;
 }
 
 .RegionStateNation tr {
-  border-bottom: 1px grey;
-  padding: 10px;
 }
 
 .IndEmpCP, th, td {
   width: 100%;
   text-align: left;
+  border-bottom: 1px grey;
+  border-top: 1px grey;
+  padding: 10px;
 }
 
 .IndEmpCP tr {
-  border-bottom: 1px grey;
-  padding: 10px;
 }
 
 canvas {
