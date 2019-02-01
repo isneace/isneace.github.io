@@ -13,7 +13,6 @@ table.RegionStateNation, th, td {
 }
 
 table.RegionStateNation tr {
-  border-collapse: collapse; 
 }
 
 table.IndEmpCP, th, td {
@@ -24,7 +23,6 @@ table.IndEmpCP, th, td {
 }
 
 table.IndEmpCP tr {
-  border-collapse: collapse; 
 }
 
 canvas {
