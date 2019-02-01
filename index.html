@@ -17,8 +17,8 @@
             success: myCallback,        
           });
           
-          var summ;
-          var trendComp;
+          var summ; //summary
+          var trendComp; //trend_comparison
           var empInd; //employing_industries
           
           var empIndOccTot; //employing_industries in_occupation_job total
@@ -63,6 +63,10 @@
             document.getElementById("13Job1").innerHTML = trendComp.regional[0];
             document.getElementById("13Job2").innerHTML = trendComp.state[0];
             document.getElementById("13Job3").innerHTML = trendComp.nation[0];
+            
+            document.getElementById("18Job1").innerHTML = trendComp.regional[5]
+            document.getElementById("18Job2").innerHTML = trendComp.state[5]
+            document.getElementById("18Job3").innerHTML = trendComp.nation[5]
             
             document.getElementById("softPubTot").innerHTML = empInd.industries[0].in_occupation_jobs;
             document.getElementById("csdsTot").innerHTML = empInd.industries[1].in_occupation_jobs;
@@ -123,21 +127,21 @@
         <tr>
           <td> Region </td>
           <td id = "13Job1"></td>
-          <td></td>
+          <td id = "18Job1"></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
           <td> State </td>
           <td id = "13Job2"></td>
-          <td></td>
+          <td id = "18Job2"></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
           <td> Nation </td>
           <td id = "13Job3"></td>
-          <td></td>
+          <td id = "18Job3"></td>
           <td></td>
           <td></td>
         </tr>
