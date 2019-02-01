@@ -21,12 +21,13 @@
           //have to use call back because async
           var occupation;
           function myCallback(response) {
-            console.log(response.occupation.onet);
+            console.log("inside the ajax." + response.occupation.onet);
             occupation = response.occupation.onet;
           }
           
           document.getElementById("test").innerHTML = occupation;
           alert(occupation);
+          console.log("outside the ajax." + occupation);
         });
         
       </script>
