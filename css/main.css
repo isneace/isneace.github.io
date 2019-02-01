@@ -1,10 +1,10 @@
 .OccupSumCP, th, td {
   width: 100%;
-  border: 2px solid grey;
   border-collapse: collapse;
 }
 
 .OccupSumCP tr {
+  border-bottom: 2px solid grey;
   padding: 50px;
 }
 
