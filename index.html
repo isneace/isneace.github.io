@@ -21,6 +21,11 @@
           var empInd;
           var empIndJobTot;
           var softPubJob;
+          var csdsJob;
+          var ccpsJob;
+          var airManJob;
+          var ocrsJob;
+          
           var occup;
           function myCallback(response) {  //have to use call back because async
             
@@ -28,11 +33,18 @@
             
             empIndJobTot = (empInd.industries[0].jobs + empInd.industries[1].jobs + empInd.industries[2].jobs + empInd.industries[3].jobs + empInd.industries[4].jobs);
             softPubJob = ((empInd.industries[0].jobs * 100) / empIndJobTot);
+            csdsJob = ((empInd.industries[1].jobs * 100) / empIndJobTot);
+            ccpsJob = ((empInd.industries[2].jobs * 100) / empIndJobTot);
+            airManJob = ((empInd.industries[3].jobs * 100) / empIndJobTot);
+            ocrsJob = ((empInd.industries[4].jobs * 100) / empIndJobTot);
             
             occup = response.occupation;
-            console.log(empIndJobTot);
-            //document.getElementById("test").innerHTML = occupation;
+            //console.log(empIndJobTot);
             document.getElementById("softPub").innerHTML = softPubJob.toFixed(0) + "%";
+            document.getElementById("csds").innerHTML = csdsJob.toFixed(0) + "%";
+            document.getElementById("ccps").innerHTML = ccpsJob.toFixed(0) + "%";
+            document.getElementById("airMan").innerHTML = airManJob.toFixed(0) + "%";
+            document.getElementById("ocrs").innerHTML = ocrsJob.toFixed(0) + "%";
           }
           
         });
@@ -116,7 +128,7 @@
           <td> Computer Systems Design Services </td>
           <td></td> <!-- JS here -->
           <td></td> <!-- JS here -->
-          <td></td> <!-- JS here -->
+          <td id = "csds"></td> <!-- JS here -->
         </tr>
         <tr>
           <td> Custom Computer Programming Services </td>
@@ -128,7 +140,7 @@
           <td> Aircraft Manufacturing </td>
           <td></td> <!-- JS here -->
           <td></td> <!-- JS here -->
-          <td></td> <!-- JS here -->
+          <td id = "airMan"></td> <!-- JS here -->
         </tr>
         <tr>
           <td> Other Computer Related Services </td>
