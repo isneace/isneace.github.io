@@ -3,7 +3,9 @@
   border-collapse: collapse;
   border-bottom: 2px solid grey;
   border-top: 2px solid grey;
-  padding: 20px;
+  border-right: 2px solid grey;
+  border-left: 2px solid grey;
+  padding: 50px;
 }
 
 .OccupSumCP tr {
@@ -12,6 +14,7 @@
 .RegionStateNation, th, td {
   width: 100%;
   text-align: left;
+  border-collapse: collapse;
 }
 
 .RegionStateNation tr {
@@ -23,12 +26,14 @@
 .IndEmpCP, th, td {
   width: 100%;
   text-align: left;
+  border-collapse: collapse;
 }
 
 .IndEmpCP tr {
   border-bottom: 1px grey;
   border-top: 1px grey;
   padding: 10px;
+  border-collapse: collapse;
 }
 
 canvas {
