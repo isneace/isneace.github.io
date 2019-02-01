@@ -18,7 +18,7 @@
             success: myCallback,        
           });
           
-          var summary;
+          var summ;
           var empInd; //employing_industries
           
           var empIndOccTot; //employing_industries in_occupation_job total
@@ -36,8 +36,9 @@
           var ocrsJob; //Other Computer Related Services jobs
           
           function myCallback(response) {  //have to use call back because async
-            summary = response.summary;
+            summ = response.summary;
             empInd = response.employing_industries;
+            console.log(summ.jobs.regional);
             
             //Below finds the percentage of in_occupation for each job
             empIndOccTot = (empInd.industries[0].in_occupation_jobs + empInd.industries[1].in_occupation_jobs + empInd.industries[2].in_occupation_jobs + empInd.industries[3].in_occupation_jobs + empInd.industries[4].in_occupation_jobs);
@@ -55,9 +56,9 @@
             airManJob = ((empInd.industries[3].jobs * 100) / empIndJobTot);
             ocrsJob = ((empInd.industries[4].jobs * 100) / empIndJobTot);
             
-            document.getElementById("jobs").innerHTML = summary.jobs.regional + "Job (2015)";
-            document.getElementById("jobsGrowth").innerHTML = "+" + summary.jobs_growth.regional + "%";
-            document.getElementById("earnings").innerHTML = summary.earnings.regional;
+            document.getElementById("jobs").innerHTML = summ.jobs.regional + "Job (2015)";
+            document.getElementById("jobsGrowth").innerHTML = "+" + summ.jobs_growth.regional + "%";
+            document.getElementById("earnings").innerHTML = summ.earnings.regional;
             
             document.getElementById("softPubTot").innerHTML = empInd.industries[0].in_occupation_jobs;
             document.getElementById("csdsTot").innerHTML = empInd.industries[1].in_occupation_jobs;
