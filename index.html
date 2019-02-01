@@ -39,7 +39,13 @@
             
             empInd = response.employing_industries;
             
+            //Below finds the percentage of in_occupation for each job
             empIndOccTot = (empInd.industries[0].in_occupation_jobs + empInd.industries[1].in_occupation_jobs + empInd.industries[2].in_occupation_jobs + empInd.industries[3].in_occupation_jobs + empInd.industries[4].in_occupation_jobs);
+            softPubOcc = ((empInd.industries[0].in_occupation_jobs * 100) / empIndOccTot);
+            csdsOcc = ((empInd.industries[1].in_occupation_jobs * 100) / empIndOccTot);
+            ccpsOcc = ((empInd.industries[2].in_occupation_jobs * 100) / empIndOccTot);
+            airManOcc = ((empInd.industries[3].in_occupation_jobs * 100) / empIndOccTot);
+            ocrsOcc = ((empInd.industries[4].in_occupation_jobs * 100) / empIndOccTot);
             
             //Below finds the percentage of how many jobs there are in each field
             empIndJobTot = (empInd.industries[0].jobs + empInd.industries[1].jobs + empInd.industries[2].jobs + empInd.industries[3].jobs + empInd.industries[4].jobs);
@@ -49,8 +55,12 @@
             airManJob = ((empInd.industries[3].jobs * 100) / empIndJobTot);
             ocrsJob = ((empInd.industries[4].jobs * 100) / empIndJobTot);
             
-            occup = response.occupation;
-            //console.log(empIndJobTot);
+            document.getElementById("softPubOcc").innerHTML = softPubOcc.toFixed(0) + "%";
+            document.getElementById("csdsOcc").innerHTML = csdsOcc.toFixed(0) + "%";
+            document.getElementById("ccpsOcc").innerHTML = ccpsOcc.toFixed(0) + "%";
+            document.getElementById("airManOcc").innerHTML = airManOcc.toFixed(0) + "%";
+            document.getElementById("ocrsOcc").innerHTML = ocrsOcc.toFixed(0) + "%";
+            
             document.getElementById("softPub").innerHTML = softPubJob.toFixed(0) + "%";
             document.getElementById("csds").innerHTML = csdsJob.toFixed(0) + "%";
             document.getElementById("ccps").innerHTML = ccpsJob.toFixed(0) + "%";
@@ -132,31 +142,31 @@
         <tr>
           <td> Software Publishers </td>
           <td></td> <!-- JS here -->
-          <td></td> <!-- JS here -->
+          <td id = "softPubOcc"></td> <!-- JS here -->
           <td id = "softPub"></td> <!-- JS here -->
         </tr>
         <tr>
           <td> Computer Systems Design Services </td>
           <td></td> <!-- JS here -->
-          <td></td> <!-- JS here -->
+          <td id = "csdsOcc"></td> <!-- JS here -->
           <td id = "csds"></td> <!-- JS here -->
         </tr>
         <tr>
           <td> Custom Computer Programming Services </td>
           <td></td> <!-- JS here -->
-          <td></td> <!-- JS here -->
+          <td id = "ccpsOcc"></td> <!-- JS here -->
           <td id = "ccps"></td> <!-- JS here -->
         </tr>
         <tr>
           <td> Aircraft Manufacturing </td>
           <td></td> <!-- JS here -->
-          <td></td> <!-- JS here -->
+          <td id = "airManOcc"></td> <!-- JS here -->
           <td id = "airMan"></td> <!-- JS here -->
         </tr>
         <tr>
           <td> Other Computer Related Services </td>
           <td></td> <!-- JS here -->
-          <td></td> <!-- JS here -->
+          <td id = "ocrsOcc"></td> <!-- JS here -->
           <td id = "ocrs"></td> <!-- JS here -->
         </tr>
       </table>
