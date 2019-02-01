@@ -17,6 +17,7 @@
             success: myCallback,        
           });
           
+          var totJobs; //Total number of jobs
           var summ; //summary
           var trendComp; //trend_comparison
           var empInd; //employing_industries
@@ -44,6 +45,7 @@
           var ocrsJob; //Other Computer Related Services jobs
           
           function myCallback(response) {  //have to use call back because async
+            totJobs = response.summary.jobs.regional;
             summ = response.summary;
             trendComp = response.trend_comparison;
             empInd = response.employing_industries;
