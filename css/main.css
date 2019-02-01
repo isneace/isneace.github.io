@@ -9,22 +9,22 @@
 }
 
 .RegionStateNation, th, td {
-  border-bottom: 1px grey;
   width: 100%;
   text-align: left;
 }
 
 .RegionStateNation tr {
+  border-bottom: 1px grey;
   padding: 10px;
 }
 
 .IndEmpCP, th, td {
-  border-bottom: 1px grey;
   width: 100%;
   text-align: left;
 }
 
 .IndEmpCP tr {
+  border-bottom: 1px grey;
   padding: 10px;
 }
 
