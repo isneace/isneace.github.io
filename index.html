@@ -23,6 +23,7 @@
           function myCallback(response) {
             
             occupation = response.occupation.onet;
+            console.log(response.employing_industires.industries[0].title);
             //document.getElementById("test").innerHTML = occupation;
           }
           
