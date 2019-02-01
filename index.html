@@ -10,7 +10,7 @@
         
         $(document).ready(function(){
           
-          $.ajax({ //Uses Ajax to "import" the json file
+          $.ajax({                              //Uses Ajax to "import" the json file
             url: 'ProjectSampleReponse.json',
             dataType: 'json',
             type: 'get',
@@ -18,17 +18,14 @@
             success: myCallback,        
           });
 
-          //have to use call back because async
+                                                //have to use call back because async
           var occupation;
           function myCallback(response) {
-            console.log("inside the ajax." + response.occupation.onet);
+            
             occupation = response.occupation.onet;
-            document.getElementById("test").innerHTML = occupation;
+            //document.getElementById("test").innerHTML = occupation;
           }
           
-          //document.getElementById("test").innerHTML = occupation;
-          alert(occupation);
-          console.log("outside the ajax." + occupation);
         });
         
       </script>
@@ -38,11 +35,7 @@
       <h1> Occupation Overview </h1>
       <h2> Computer Programmers in Seattle-Tacoma-Bellevue, WA </h2>
       
-      <p id = "test"></p>
-      <script>
-        var x = "hello world";
-        //document.getElementById("test").innerHTML = x;
-      </script>
+      <!-- <p id = "test"></p> -->
       
       <div class = "Titles">
         <h3> Occupation Summary for Computer Programmers </h3>
