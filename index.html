@@ -4,6 +4,7 @@
       <title> EMSIdataProject </title>
       <link rel="stylesheet" type="text/css" href="/css/main.css"> <!-- This links to my CSS style sheet -->
       <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- This gives me access to the ajax/jquery libraries -->
+      <script scr = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
       
       <script>
         
@@ -110,6 +111,28 @@
             document.getElementById("ccps").innerHTML = ccpsJob.toFixed(1) + "%";
             document.getElementById("airMan").innerHTML = airManJob.toFixed(1) + "%";
             document.getElementById("ocrs").innerHTML = ocrsJob.toFixed(1) + "%";
+            
+            const CHART = document.getElementById("lineChart");
+            let lineChart = new Chart(CHART, {
+              type: 'line',
+              datasets: [
+                {
+                  xAxisID: 'years',
+                  yAxisID: 'percent change',
+                  borderColor: 'gray',
+                  fill: false,
+                  lineTension: 0,
+                  data: [{
+                    x: 10,
+                    y:20
+                  }, {
+                    x: 15,
+                    y: 10
+                  }]
+                }
+              ]
+                 
+            })
           }
           
         });
@@ -139,7 +162,7 @@
         <h3> Regional Trends </h3>
       </div>
       
-      <canvas></canvas> <!-- Figure out how to put a graph here -->
+      <canvas id = "lineChart"></canvas> <!-- Figure out how to put a graph here -->
       
       <table class = "RegionStateNation">
         <tr class = "RegionStateNation">
