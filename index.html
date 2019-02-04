@@ -112,6 +112,7 @@
             document.getElementById("airMan").innerHTML = airManJob.toFixed(1) + "%";
             document.getElementById("ocrs").innerHTML = ocrsJob.toFixed(1) + "%";
             
+            /*  
             const CHART = document.getElementById("lineChart");
             let lineChart = new Chart(CHART, {
               type: 'line',
@@ -119,10 +120,10 @@
                 {
                   xAxisID: 'years',
                   yAxisID: 'percent change',
-                  borderColor: 'gray',
+                  borderColor: 'grey',
                   fill: false,
                   lineTension: 0,
-                  data: [{
+                  data: [{ //These are test data values
                     x: 10,
                     y:20
                   }, {
@@ -136,6 +137,14 @@
           }
           
         });
+        */
+            /*
+            I was unable to figure out how to make the chart work because it was undefined.
+            I believe that my error is somewhere when I imported the library I think that it
+            is conflicting with the ajax library. If it had worked I would have put my data
+            variables from my json in for my test data points. Had I had more time I would have
+            also programmed the graph from scratch rather than using a library
+            */
         
       </script>
     </head>
