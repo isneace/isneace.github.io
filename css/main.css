@@ -15,25 +15,24 @@
   width: 100%;
   text-align: left;
   border-collapse: collapse;
-}
-
-.RegionStateNation tr {
   border-bottom: 1px grey;
   border-top: 1px grey;
   padding: 10px;
+}
+
+.RegionStateNation tr {
 }
 
 .IndEmpCP th, .IndEmpCP td {
   width: 100%;
   text-align: left;
   border-collapse: collapse;
-}
-
-.IndEmpCP tr {
   border-bottom: 1px grey;
   border-top: 1px grey;
   padding: 10px;
-  border-collapse: collapse;
+}
+
+.IndEmpCP tr {
 }
 
 canvas {
