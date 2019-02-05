@@ -5,9 +5,7 @@
       <link rel="stylesheet" type="text/css" href="/css/main.css"> <!-- This links to my CSS style sheet -->
       <script scr = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
       <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- This gives me access to the ajax/jquery libraries -->
-      
-      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-      
+        
       <script>
         
         $(document).ready(function(){
@@ -148,39 +146,6 @@
             variables from my json in for my test data points. Had I had more time I would have
             also programmed the graph from scratch rather than using a library
             */
-        window.onload = function () {
-
-        var chart = new CanvasJS.Chart("chartContainer", {
-          animationEnabled: true,
-          theme: "light2",
-          title:{
-            text: "Simple Line Chart"
-          },
-          axisY:{
-            includeZero: false
-          },
-          data: [{        
-            type: "line",       
-            dataPoints: [
-              { y: 450 },
-              { y: 414},
-              { y: 520, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
-              { y: 460 },
-              { y: 450 },
-              { y: 500 },
-              { y: 480 },
-              { y: 480 },
-              { y: 410 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
-              { y: 500 },
-              { y: 480 },
-              { y: 510 }
-            ]
-          }]
-        });
-        chart.render();
-
-        }
-        
       </script>
     </head>
     
